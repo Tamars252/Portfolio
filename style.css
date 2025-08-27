@@ -1,0 +1,116 @@
+body {
+    padding: 0;
+    margin: 0;
+    
+}
+
+header {
+    min-height: 100vh;
+    width: 100%;
+    /* if u want image background use code below + change url */
+    /* background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(200, 137, 69, 0.7)), url(test.jpg); */
+    background-image: linear-gradient(rgba(238, 171, 219, 0.7), rgba(237, 227, 236, 0.7));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+h1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 100px;
+}
+h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(63, 44, 16);
+    text-align:left;
+    /*padding-left: 100px;
+    /*text-decoration: underline;*/
+
+}
+h4{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(63, 44, 16);
+    text-align:left;
+    padding-left: 100px;
+}
+
+li{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    font-weight:normal;
+    text-align: left; 
+    /*padding-left: 100px;*/
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* bar photo framing */
+nav img{
+    width: 250px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #12000e;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #454141;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+/* bio pic framing 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75;
+  border-radius: 10%;
+}*/
+
+
+/* to create scrollable gallary for home page*/
+div.scroll-container {
+  background-color: #f6f3f3;
+  overflow: auto;
+  white-space: nowrap;
+  padding-top: 50px;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
